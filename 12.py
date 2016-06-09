@@ -1,1 +1,2 @@
-print(18)
+x = input()
+print(x)
