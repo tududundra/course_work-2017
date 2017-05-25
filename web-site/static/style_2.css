@@ -1,0 +1,87 @@
+* {box-sizing: border-box;}
+body {
+  margin: 0;
+  background: #f2f2f2;
+}
+header {
+  background: rgba(34,34,34,.2);
+  text-align: center;
+}
+header a {
+  text-decoration: none;
+  outline: none;
+  display: block;
+  transition: .3s ease-in-out;
+}
+.logo {
+  color: #515f75;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  padding: 20px 0;
+}
+nav {
+  display: table;
+  margin: 0 auto;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.topmenu > li {
+  width: 25%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+.topmenu > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ca0829;
+  padding: 15px 30px;
+}
+.topmenu > li:hover > a, .submenu li:hover a {color: #515f75;}
+.submenu-link:after {
+  font-family: "FontAwesome";
+  color: inherit;
+  margin-left: 10px;
+}
+.submenu {
+  background: #ca0829;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+.submenu a {
+  color: white;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.submenu li:last-child a {border-bottom: none;}
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
+table {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  margin: auto;
+  width: 50%;
+}
+td {border: 1px solid grey;}
+table li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+#chartdiv {
+	width	: 100%;
+	height	: 1250px;
+}

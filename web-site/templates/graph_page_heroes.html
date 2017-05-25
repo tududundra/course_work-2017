@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>График встречаемости героев</title>
+    <link href="static/style_2.css" type="text/css" rel="stylesheet">
+    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script src="https://www.amcharts.com/lib/3/xy.js"></script>
+    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+    <script src="static/heroes_graph.js"></script>
+</head>
+<body>
+<header>
+  <a href="" class="logo">
+      Москва
+      <img src="static/Circle-icons-train.svg.png" width="100" height="100" align="middle">
+      Петушки
+  </a>
+  <nav>
+      <ul class="topmenu">
+        <li><a href="{{ main_url }}">Главная</a></li>
+        <li><a href="" class="submenu-link">Графики&#10148;</a>
+          <ul class="submenu">
+            <li><a href="{{ sent_url }}">Предложения</a></li>
+            <li><a href="{{ hero_url }}">Герои</a></li>
+            <li><a href="{{ key_url }}">Слова</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ map_url }}">Карта</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+    </nav>
+</header>
+
+<div id="chartdiv"></div>
+
+</body>
+</html>
